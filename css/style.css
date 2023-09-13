@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 20px;
+    background-color: #ffcc00;
+}
+
+.logo{
+    width: 200px;
+}
