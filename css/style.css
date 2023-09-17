@@ -11,3 +11,20 @@ header{
 .logo{
     width: 200px;
 }
+
+#vakkenMenu a{
+    text-decoration: none;
+    color: #660404;
+}
+
+#vakkenInhoud h2{
+    color: #660404;
+}
+
+#vakkenInhoud > div{
+    display: none;
+}
+
+#vakkenInhoud > div:target{
+    display: block;
+}
