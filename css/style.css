@@ -4,7 +4,8 @@
 }
 
 html{
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -17,7 +18,7 @@ header{
     background-color: #ffcc00;
 }
 
-.logo{
+header img{
     width: 200px;
 }
 
@@ -40,4 +41,15 @@ header{
 
 .vakken{
     display: flex;
+}
+
+img{
+    max-width:100%;
+    max-height: auto;
+}
+
+h1{
+    color: #660404;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
