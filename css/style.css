@@ -7,6 +7,11 @@ html{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
 header{
     padding: 20px;
     background-color: #ffcc00;
@@ -31,4 +36,8 @@ header{
 
 #vakkenInhoud > div:target{
     display: block;
+}
+
+.vakken{
+    display: flex;
 }
