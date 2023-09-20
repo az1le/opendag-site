@@ -14,12 +14,26 @@ html{
 }
 
 header{
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     background-color: #ffcc00;
+    margin-bottom: 20px;
 }
 
 header img{
     width: 200px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#vakkenMenu{
+    list-style: none;
 }
 
 #vakkenMenu a{
@@ -41,15 +55,39 @@ header img{
 
 .vakken{
     display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
-img{
+.image{
     max-width:100%;
     max-height: auto;
+    margin: 20px 0px;
 }
 
 h1{
     color: #660404;
-    margin-top: 25px;
+}
+
+h2{
+    color: #660404;
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
+}
+
+h3{
+    color: #660404;
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    color: #660404;
+}
+
+hr.rounded{
+    border-top: 8px solid #ffcc00;
+    border-radius: 5px;
+    margin: 40px;
 }
