@@ -23,19 +23,19 @@
             <div class="vakken">
                 <nav>
                     <ul id="vakkenMenu">
-                        <li><a href="#vak1Inhoud">NATIVE</a></li>
-                        <li><a href="#vak2Inhoud">WEB</a></li>
-                        <li><a href="#vak3Inhoud">PRA</a></li>
-                        <li><a href="#vak4Inhoud">PRO</a></li>
-                        <li><a href="#vak5Inhoud">Generiek</a></li>
-                        <li><a href="#vak6Inhoud">POR</a></li>
+                        <li><a href="#vak1Inhoud" onclick="showContent('vak1Inhoud')">NATIVE</a></li>
+                        <li><a href="#vak2Inhoud" onclick="showContent('vak2Inhoud')">WEB</a></li>
+                        <li><a href="#vak3Inhoud" onclick="showContent('vak3Inhoud')">PRA</a></li>
+                        <li><a href="#vak4Inhoud" onclick="showContent('vak4Inhoud')">PRO</a></li>
+                        <li><a href="#vak5Inhoud" onclick="showContent('vak5Inhoud')">Generiek</a></li>
+                        <li><a href="#vak6Inhoud" onclick="showContent('vak6Inhoud')">POR</a></li>
                     </ul>
                 </nav>
 
                 <div id="vakkenInhoud">
                     <div id="vak1Inhoud">
                         <h4>NATIVE</h4>
-                        <p>Tijdens NATIVE zul je applicaties leren bouwen. Je begint eerst met Micro: bit en Python, maar bent uiteindelijk bezig met C#.</p>
+                        <p>Tijdens NATIVE zul je applicaties leren bouwen. Je begint eerst met Micro:bit en Python, maar bent uiteindelijk bezig met C#.</p>
                     </div>
                     <div id="vak2Inhoud">
                         <h4>WEB</h4>
@@ -61,6 +61,22 @@
             </div>
             <hr class="rounded">
         </div>
+
+        <script>
+            function showContent(id) {
+                var contentDivs = document.querySelectorAll("#vakkenInhoud > div");
+                for (var i = 0; i < contentDivs.length; i++) {
+                    contentDivs[i].style.display = "none";
+                }
+    
+                var selectedDiv = document.getElementById(id);
+                if (selectedDiv) {
+                    selectedDiv.style.display = "block";
+                }
+
+                event.preventDefault();
+            }
+        </script>
 
         <div class="container">
             <h2>Rooster</h2>

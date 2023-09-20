@@ -32,31 +32,43 @@ header img{
     align-items: center;
 }
 
+.vakken{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
 #vakkenMenu{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-#vakkenMenu a{
+#vakkenMenu li {
+    margin: 10px;
+}
+
+#vakkenMenu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
     text-decoration: none;
-    color: #660404;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#vakkenInhoud h2{
-    color: #660404;
+#vakkenMenu li a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 #vakkenInhoud > div{
     display: none;
-}
-
-#vakkenInhoud > div:target{
-    display: block;
-}
-
-.vakken{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
 }
 
 .image{
