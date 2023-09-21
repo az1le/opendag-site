@@ -10,7 +10,10 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="img/curio-05-bruin-logo-rgb.png" alt="logo">
+                <a href="https://www.curio.nl/mbo/techniek-en-technologie/softwaredeveloper/" target="_blank" title="https://www.curio.nl/mbo/techniek-en-technologie/softwaredeveloper/">
+                    <img src="img/curio-05-bruin-logo-rgb.png" alt="logo">
+                </a>
+                <div class="divider"></div>
                 <h1>Software Developer</h1>
             </div>
         </div>
@@ -27,7 +30,7 @@
                         <li><a href="#subject2" onclick="showContent('subject2')">WEB</a></li>
                         <li><a href="#subject3" onclick="showContent('subject3')">PRA</a></li>
                         <li><a href="#subject4" onclick="showContent('subject4')">PRO</a></li>
-                        <li><a href="#subject5" onclick="showContent('subject5')">Generiek</a></li>
+                        <li><a href="#subject5" onclick="showContent('subject5')">GENERIEK</a></li>
                         <li><a href="#subject6" onclick="showContent('subject6')">POR</a></li>
                     </ul>
                 </nav>
@@ -50,7 +53,7 @@
                         <p>PRO krijg je om te leren hoe je een project eigenlijk moet aanpakken en het beste kunt samenwerken. Je leert plannen en deadlines van projecten nakomen met behulp van Scrum.</p>
                     </div>
                     <div id="subject5">
-                        <h4>Generiek</h4>
+                        <h4>GENERIEK</h4>
                         <p>Naast de vakken die met software development te maken hebben krijg je natuurlijk de generieke vakken: Rekenen, Nederlands en Engels. Rekenen bestaat uit verschillende vaardigheden, en bij Nederlands en Engels heb je onderdelen zoals lezen, luisteren, schrijven, spreken en gesprekken. Eigenlijk krijg je de lesstof die je al een keer hebt geleerd en bereid je voor op je eindexamen.</p>
                     </div>
                     <div id="subject6">
@@ -98,18 +101,23 @@
             <h2>Docenten</h2>
             <div class="teachers-list">
                 <div class="teacher">
+                    <img class="teacher-img" src="img/person_placeholder_2_0.png" alt="docent">
                     <p>Bart Roos</p>
                 </div>
                 <div class="teacher">
+                    <img class="teacher-img" src="img/person_placeholder_2_0.png" alt="docent">
                     <p>Marc Ridders</p>
                 </div>
                 <div class="teacher">
+                    <img class="teacher-img" src="img/person_placeholder_2_0.png" alt="docent">
                     <p>Joost Ambagts</p>
                 </div>
                 <div class="teacher">
+                    <img class="teacher-img" src="img/person_placeholder_2_0.png" alt="docent">
                     <p>Mustafa Kasar</p>
                 </div>
                 <div class="teacher">
+                    <img class="teacher-img" src="img/person_placeholder_2_0.png" alt="docent">
                     <p>Wiro Verdiesen</p>
                 </div>
             </div>
@@ -117,7 +125,14 @@
     </main>
 
     <footer>
-
+        <div class="container">
+            <p><b>&copy; <span id="currentYear"></span> Curio. All rights reserved.</b></p>
+        </div>
     </footer>
+    
+    <script>
+        var d = new Date();
+        document.getElementById('currentYear').textContent = d.getFullYear();
+    </script>    
 </body>
 </html>
