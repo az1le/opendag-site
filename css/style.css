@@ -32,7 +32,7 @@ header img{
     align-items: center;
 }
 
-.vakken{
+.subjects{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,18 +40,18 @@ header img{
     margin: 20px;
 }
 
-#vakkenMenu{
+#subjects-list{
     list-style: none;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-#vakkenMenu li {
+#subjects-list li {
     margin: 10px;
 }
 
-#vakkenMenu li a {
+#subjects-list li a {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid #000;
@@ -62,12 +62,12 @@ header img{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#vakkenMenu li a:hover {
+#subjects-list li a:hover {
     background-color: #000;
     color: #fff;
 }
 
-#vakkenInhoud > div{
+#subjects-content > div{
     display: none;
 }
 
@@ -102,4 +102,21 @@ hr.rounded{
     border-top: 8px solid #ffcc00;
     border-radius: 5px;
     margin: 40px;
+}
+
+.teachers-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.teacher{
+    margin: 10px;
+}
+
+.teacher p{
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
